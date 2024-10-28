@@ -25,4 +25,16 @@ public class Nodo : MonoBehaviour
         Opcion nuevaOpcion = new Opcion(descripcion, nodoDestino, esFinal);
         opciones.Add(nuevaOpcion);
     }
+
+    public void CambiarOpcion(Opcion optVieja, string descripcion, Nodo nodoDestino, bool esFinal = false)
+    {
+        opciones.Remove(optVieja);
+        Opcion nuevaOpcion = new Opcion(descripcion, nodoDestino, esFinal);
+        opciones.Add(nuevaOpcion);
+    }
+
+    public delegate void ChangeHistory();
+    public ChangeHistory changeHistory;
+
+
 }
