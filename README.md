@@ -25,7 +25,7 @@
   - Inspeccionar la cabaña → [Nodo 6](#nodo-6-la-cabaña-olvidada)
   - Mirar dentro del pozo → [Nodo 7](#nodo-7-el-pozo-maldito)
 
-### Nodo 4: El dormitorio prohibido
+### Nodo 4: El dormitorio prohibido ( se obtiene una vida extra para poder sobrevivir al nodo 8)
 - **Descripción**: Un dormitorio con un espejo roto que refleja una silueta extraña.
 - **Acciones**:
   - Examinar el espejo → [Nodo 8](#nodo-8-el-espejo-de-la-muerte-final-malo)
