@@ -6,15 +6,18 @@ using UnityEngine;
 
 public class NodeData : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    public string title;
+    [field: TextArea(3, 10)] public string history;
+    public Sprite imagen;
+    [System.Serializable]
+    public class Opcion
     {
-        
+        public string descripcion;
+        public Nodo nodoDestino;
+        public bool esFinal;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public List<Opcion> opciones = new List<Opcion>();
+
+
 }

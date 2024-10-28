@@ -14,6 +14,8 @@ public class HistoryManager : MonoBehaviour
     public Image nodoImage;   // Referencia a la imagen del nodo en la UI
     private Nodo currentNode;
 
+    public HistoriaData historiaData;  // Referencia al Scriptable Object de la historia
+
     void Start()
     {
         StartHistory();  // Inicializamos la historia al comienzo
