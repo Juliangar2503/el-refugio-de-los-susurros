@@ -5,16 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerMenu : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     // Método para cambiar de escena
     public void ChangeScene(string sceneName)
@@ -30,7 +20,5 @@ public class GameManagerMenu : MonoBehaviour
         Application.Quit();
         // Esto no hará nada en el editor de Unity, pero funcionará en una build
     }
-
-
 
 }
