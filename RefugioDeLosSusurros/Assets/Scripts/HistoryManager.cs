@@ -20,14 +20,26 @@ public class HistoryManager : MonoBehaviour
     void Start()
     {
         currentNode = historiaData.nodoInicial;
+        //Se queda desactivado el boton 
+        historiaData.nodos[3].opciones[2].desactivar = false;
+         historiaData.nodos[3].opciones[0].esFinal = true;
+        historiaData.nodos[5].opciones[0].esFinal = true;
+        historiaData.nodos[3].opciones[0].nodoDestino = historiaData.nodos[7];
+        historiaData.nodos[5].opciones[0].nodoDestino = historiaData.nodos[7];
+        historiaData.nodos[3].opciones[2].changeHistoryDelegate = () =>
+        {
+            historiaData.nodos[3].opciones[2].desactivar = true;
+            historiaData.nodos[3].opciones[0].nodoDestino = historiaData.nodos[11];
+            historiaData.nodos[3].opciones[0].esFinal = false;
+            historiaData.nodos[5].opciones[0].nodoDestino = historiaData.nodos[11];
+            historiaData.nodos[5].opciones[0].esFinal = false;
+        };
         ShowNode(currentNode);
     }
 
     // Método para mostrar el texto y las opciones del nodo actual
     public void ShowNode(NodeData node)
     {
-        node.InvokeChangeHistory();
-
         historyTitle.text = node.title;
         historyText.text = node.history;
 
@@ -58,6 +70,10 @@ public class HistoryManager : MonoBehaviour
         {
             Button nuevoBoton = Instantiate(buttonPrefabs, optionsPanel.transform);
             nuevoBoton.GetComponentInChildren<TextMeshProUGUI>().text = opcion.descripcion;
+            if (opcion.desactivar)
+            {
+                nuevoBoton.gameObject.SetActive(false);
+            }
             nuevoBoton.onClick.AddListener(() => SelectOption(opcion));
         }
     }
@@ -65,6 +81,7 @@ public class HistoryManager : MonoBehaviour
     // Método cuando se selecciona una opción
     public void SelectOption(NodeData.Opcion opcion)
     {
+        opcion.changeHistoryDelegate?.Invoke();
         if (opcion.esFinal)
         {
             // Si es un nodo final, muestra el final del juego
@@ -74,8 +91,11 @@ public class HistoryManager : MonoBehaviour
         else
         {
             // Avanza al siguiente nodo
-            currentNode = opcion.nodoDestino;
-            ShowNode(currentNode);
+            if (opcion.nodoDestino)
+            {
+                currentNode = opcion.nodoDestino;
+                ShowNode(currentNode);
+            } 
         }
     }
 

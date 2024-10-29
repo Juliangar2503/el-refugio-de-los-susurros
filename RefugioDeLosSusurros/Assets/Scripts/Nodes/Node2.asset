@@ -19,6 +19,12 @@ MonoBehaviour:
   - descripcion: Subir las escaleras
     nodoDestino: {fileID: 11400000, guid: 985e6b0930768df479a6a2c8b54e6550, type: 2}
     esFinal: 0
+    desactivar: 0
   - descripcion: Abrir la puerta del fondo
     nodoDestino: {fileID: 11400000, guid: 5536056acae9b5c42b6c038cb13a72cd, type: 2}
     esFinal: 0
+    desactivar: 0
+  - descripcion: Salir de la mansion
+    nodoDestino: {fileID: 11400000, guid: aff515702223ca54a9928daa82ebb6f9, type: 2}
+    esFinal: 0
+    desactivar: 0

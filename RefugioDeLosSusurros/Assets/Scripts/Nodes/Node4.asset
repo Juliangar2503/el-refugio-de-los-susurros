@@ -19,11 +19,14 @@ MonoBehaviour:
   imagen: {fileID: 0}
   opciones:
   - descripcion: Examinar el espejo
-    nodoDestino: {fileID: 11400000, guid: eb49e0bf694b21245b0a7b99229109c9, type: 2}
-    esFinal: 1
+    nodoDestino: {fileID: 11400000, guid: ca3910d29e933e344902c394f94dace2, type: 2}
+    esFinal: 0
+    desactivar: 0
   - descripcion: Volver a las escaleras
     nodoDestino: {fileID: 11400000, guid: fab651ec286fe4848822e5790ea7ba79, type: 2}
     esFinal: 0
+    desactivar: 0
   - descripcion: Buscar entre los cajones
-    nodoDestino: {fileID: 11400000, guid: e08b66bbc6a026248a85bb6673f77240, type: 2}
+    nodoDestino: {fileID: 0}
     esFinal: 0
+    desactivar: 1
