@@ -1253,7 +1253,7 @@ MonoBehaviour:
   optionsPanel: {fileID: 321174953}
   buttonPrefabs: {fileID: 3796352622372138278, guid: 2e01a1159984ac143a631180dfea6a4e, type: 3}
   nodoImage: {fileID: 1668878483}
-  historiaData: {fileID: 0}
+  historiaData: {fileID: 11400000, guid: 384502c8595c8f34884cfd8dfe90828f, type: 2}
 --- !u!114 &879327747
 MonoBehaviour:
   m_ObjectHideFlags: 0

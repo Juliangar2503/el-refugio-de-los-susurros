@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewHistory", menuName = "HistoryData")]
 public class HistoriaData : ScriptableObject
 {
-    public Nodo nodoInicial;
-    public List<Nodo> nodos = new List<Nodo>();
+    public NodeData nodoInicial;
+    public List<NodeData> nodos = new List<NodeData>();
 }

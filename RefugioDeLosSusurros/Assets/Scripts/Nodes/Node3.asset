@@ -15,4 +15,10 @@ MonoBehaviour:
   title: "El jard\xEDn l\xFAgubre"
   history: "Rodeas la mansi\xF3n y encuentras un jard\xEDn l\xFAgubre."
   imagen: {fileID: 21300000, guid: ccd9b18ed01e9d64e8da4963fdf83fbe, type: 3}
-  opciones: []
+  opciones:
+  - descripcion: "Inspeccionar la caba\xF1a"
+    nodoDestino: {fileID: 11400000, guid: a1cf2a3a30c5c43429947c10b26332d1, type: 2}
+    esFinal: 0
+  - descripcion: Mirar dentro del pozo
+    nodoDestino: {fileID: 11400000, guid: 072065191b97fc24193ad473eec65460, type: 2}
+    esFinal: 0

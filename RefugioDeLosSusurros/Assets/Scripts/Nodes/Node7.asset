@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cefe97ac5f7b37444a92aaf8c1d681fc, type: 3}
-  m_Name: Node2
+  m_Name: Node7
   m_EditorClassIdentifier: 
-  title: "El vest\xEDbulo oscuro"
-  history: "Est\xE1s en el vest\xEDbulo oscuro. Hay una escalera que sube."
-  imagen: {fileID: 21300000, guid: 9faeee4972abdb64ca76d2f7687def28, type: 3}
+  title: El pozo maldito
+  history: "Al mirar dentro del pozo, ves una figura sombr\xEDa en el fondo."
+  imagen: {fileID: 0}
   opciones:
-  - descripcion: Subir las escaleras
-    nodoDestino: {fileID: 11400000, guid: 985e6b0930768df479a6a2c8b54e6550, type: 2}
-    esFinal: 0
-  - descripcion: Abrir la puerta del fondo
+  - descripcion: Descender al pozo
+    nodoDestino: {fileID: 11400000, guid: d423ce06b79a1064c8e89403bcc9ee23, type: 2}
+    esFinal: 1
+  - descripcion: "Alejarse r\xE1pidamente"
     nodoDestino: {fileID: 11400000, guid: 5536056acae9b5c42b6c038cb13a72cd, type: 2}
     esFinal: 0
